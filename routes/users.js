@@ -5,10 +5,12 @@ const router = express.Router();
 
 
 
+
+
 router.get(`/`, async (req, res) =>{
 
 
-    
+
     const userList = await User.find();
 
     if(!userList) {
