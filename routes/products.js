@@ -45,7 +45,7 @@ router.post(`/`, async (req, res) =>{
         countInStock: req.body.countInStock,
         rating: req.body.rating,
         numReviews: req.body.numReviews,
-        isFeatured: req.body.isFeatured,
+        isFeatured: req.body.isFeatured
     })
 
     product = await product.save();
