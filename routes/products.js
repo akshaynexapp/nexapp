@@ -8,10 +8,13 @@ const mongoose = require('mongoose');
 router.get(`/`, async (req, res) =>{
     // localhost:3000/api/v1/products?categories=2342342,234234
 
-    
+
     let filter = {};
     if(req.query.categories)
     {
+
+
+        
          filter = {category: req.query.categories.split(',')}
     }
 
