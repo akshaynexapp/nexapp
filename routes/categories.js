@@ -10,7 +10,6 @@ router.get(`/`, async (req, res) =>{
     } 
     res.status(200).send(categoryList);
 })
-
 router.get('/:id', async(req,res)=>{
     const category = await Category.findById(req.params.id);
 
